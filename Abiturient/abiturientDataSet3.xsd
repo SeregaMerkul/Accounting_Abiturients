@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="abiturientDataSet3" targetNamespace="http://tempuri.org/abiturientDataSet3.xsd" xmlns:mstns="http://tempuri.org/abiturientDataSet3.xsd" xmlns="http://tempuri.org/abiturientDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="abiturientConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="abiturientConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Abiturient.Properties.Settings.GlobalReference.Default.abiturientConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Forma_obuchenia_RUTableAdapter" GeneratorDataComponentClassName="Forma_obuchenia_RUTableAdapter" Name="Forma_obuchenia_RU" UserDataComponentName="Forma_obuchenia_RUTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="abiturientConnectionString (Settings)" DbObjectName="dbo.Forma_obuchenia_RU" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [#п\п], Название_формы_обучения FROM dbo.Forma_obuchenia_RU</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="#п\п" DataSetColumn="#п\п" />
+              <Mapping SourceColumn="Название_формы_обучения" DataSetColumn="Название_формы_обучения" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="abiturientDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="abiturientDataSet3" msprop:Generator_DataSetName="abiturientDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Forma_obuchenia_RU" msprop:Generator_RowEvHandlerName="Forma_obuchenia_RURowChangeEventHandler" msprop:Generator_RowDeletedName="Forma_obuchenia_RURowDeleted" msprop:Generator_RowDeletingName="Forma_obuchenia_RURowDeleting" msprop:Generator_RowEvArgName="Forma_obuchenia_RURowChangeEvent" msprop:Generator_TablePropName="Forma_obuchenia_RU" msprop:Generator_RowChangedName="Forma_obuchenia_RURowChanged" msprop:Generator_RowChangingName="Forma_obuchenia_RURowChanging" msprop:Generator_TableClassName="Forma_obuchenia_RUDataTable" msprop:Generator_RowClassName="Forma_obuchenia_RURow" msprop:Generator_TableVarName="tableForma_obuchenia_RU" msprop:Generator_UserTableName="Forma_obuchenia_RU">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0023_п_x005C_п" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="__п_п" msprop:Generator_ColumnPropNameInTable="__п_пColumn" msprop:Generator_ColumnVarNameInTable="_column_п_п" msprop:Generator_UserColumnName="#п\п" type="xs:int" />
+              <xs:element name="Название_формы_обучения" msprop:Generator_ColumnPropNameInRow="Название_формы_обучения" msprop:Generator_ColumnPropNameInTable="Название_формы_обученияColumn" msprop:Generator_ColumnVarNameInTable="columnНазвание_формы_обучения" msprop:Generator_UserColumnName="Название_формы_обучения" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Forma_obuchenia_RU" />
+      <xs:field xpath="mstns:_x0023_п_x005C_п" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

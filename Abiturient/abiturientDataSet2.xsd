@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="abiturientDataSet2" targetNamespace="http://tempuri.org/abiturientDataSet2.xsd" xmlns:mstns="http://tempuri.org/abiturientDataSet2.xsd" xmlns="http://tempuri.org/abiturientDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="abiturientConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="abiturientConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Abiturient.Properties.Settings.GlobalReference.Default.abiturientConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Abiturient_RUTableAdapter" GeneratorDataComponentClassName="Abiturient_RUTableAdapter" Name="Abiturient_RU" UserDataComponentName="Abiturient_RUTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="abiturientConnectionString (Settings)" DbObjectName="dbo.Abiturient_RU" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [#п\п], ФИО_абитуриента, Название_Специальности, Форма_Обучения, Пол, День_рождения, Место_рождения, Национальность, ИНН, Страховой_полис, Адрес, Номер_дома, Паспорт_Серия, Паспорт_Номер, Паспорт_Кем_выдан, Паспорт_Когда_выдан, Школа, Льгота, ФИО_Матери, ФИО_Отца, Средний_балл_аттестата, Дата_подачи_заявления, Номер_заявления, Экзамен1, Экзамен2 FROM dbo.Abiturient_RU</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="#п\п" DataSetColumn="#п\п" />
+              <Mapping SourceColumn="ФИО_абитуриента" DataSetColumn="ФИО_абитуриента" />
+              <Mapping SourceColumn="Название_Специальности" DataSetColumn="Название_Специальности" />
+              <Mapping SourceColumn="Форма_Обучения" DataSetColumn="Форма_Обучения" />
+              <Mapping SourceColumn="Пол" DataSetColumn="Пол" />
+              <Mapping SourceColumn="День_рождения" DataSetColumn="День_рождения" />
+              <Mapping SourceColumn="Место_рождения" DataSetColumn="Место_рождения" />
+              <Mapping SourceColumn="Национальность" DataSetColumn="Национальность" />
+              <Mapping SourceColumn="ИНН" DataSetColumn="ИНН" />
+              <Mapping SourceColumn="Страховой_полис" DataSetColumn="Страховой_полис" />
+              <Mapping SourceColumn="Адрес" DataSetColumn="Адрес" />
+              <Mapping SourceColumn="Номер_дома" DataSetColumn="Номер_дома" />
+              <Mapping SourceColumn="Паспорт_Серия" DataSetColumn="Паспорт_Серия" />
+              <Mapping SourceColumn="Паспорт_Номер" DataSetColumn="Паспорт_Номер" />
+              <Mapping SourceColumn="Паспорт_Кем_выдан" DataSetColumn="Паспорт_Кем_выдан" />
+              <Mapping SourceColumn="Паспорт_Когда_выдан" DataSetColumn="Паспорт_Когда_выдан" />
+              <Mapping SourceColumn="Школа" DataSetColumn="Школа" />
+              <Mapping SourceColumn="Льгота" DataSetColumn="Льгота" />
+              <Mapping SourceColumn="ФИО_Матери" DataSetColumn="ФИО_Матери" />
+              <Mapping SourceColumn="ФИО_Отца" DataSetColumn="ФИО_Отца" />
+              <Mapping SourceColumn="Средний_балл_аттестата" DataSetColumn="Средний_балл_аттестата" />
+              <Mapping SourceColumn="Дата_подачи_заявления" DataSetColumn="Дата_подачи_заявления" />
+              <Mapping SourceColumn="Номер_заявления" DataSetColumn="Номер_заявления" />
+              <Mapping SourceColumn="Экзамен1" DataSetColumn="Экзамен1" />
+              <Mapping SourceColumn="Экзамен2" DataSetColumn="Экзамен2" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="abiturientDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="abiturientDataSet2" msprop:Generator_DataSetName="abiturientDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Abiturient_RU" msprop:Generator_RowEvHandlerName="Abiturient_RURowChangeEventHandler" msprop:Generator_RowDeletedName="Abiturient_RURowDeleted" msprop:Generator_RowDeletingName="Abiturient_RURowDeleting" msprop:Generator_RowEvArgName="Abiturient_RURowChangeEvent" msprop:Generator_TablePropName="Abiturient_RU" msprop:Generator_RowChangedName="Abiturient_RURowChanged" msprop:Generator_RowChangingName="Abiturient_RURowChanging" msprop:Generator_TableClassName="Abiturient_RUDataTable" msprop:Generator_RowClassName="Abiturient_RURow" msprop:Generator_TableVarName="tableAbiturient_RU" msprop:Generator_UserTableName="Abiturient_RU">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0023_п_x005C_п" msprop:Generator_ColumnPropNameInRow="__п_п" msprop:Generator_ColumnPropNameInTable="__п_пColumn" msprop:Generator_ColumnVarNameInTable="_column_п_п" msprop:Generator_UserColumnName="#п\п" type="xs:int" />
+              <xs:element name="ФИО_абитуриента" msprop:Generator_ColumnPropNameInRow="ФИО_абитуриента" msprop:Generator_ColumnPropNameInTable="ФИО_абитуриентаColumn" msprop:Generator_ColumnVarNameInTable="columnФИО_абитуриента" msprop:Generator_UserColumnName="ФИО_абитуриента" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Название_Специальности" msprop:Generator_ColumnPropNameInRow="Название_Специальности" msprop:Generator_ColumnPropNameInTable="Название_СпециальностиColumn" msprop:Generator_ColumnVarNameInTable="columnНазвание_Специальности" msprop:Generator_UserColumnName="Название_Специальности" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Форма_Обучения" msprop:Generator_ColumnPropNameInRow="Форма_Обучения" msprop:Generator_ColumnPropNameInTable="Форма_ОбученияColumn" msprop:Generator_ColumnVarNameInTable="columnФорма_Обучения" msprop:Generator_UserColumnName="Форма_Обучения" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Пол" msprop:Generator_ColumnPropNameInRow="Пол" msprop:Generator_ColumnPropNameInTable="ПолColumn" msprop:Generator_ColumnVarNameInTable="columnПол" msprop:Generator_UserColumnName="Пол" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="День_рождения" msprop:Generator_ColumnPropNameInRow="День_рождения" msprop:Generator_ColumnPropNameInTable="День_рожденияColumn" msprop:Generator_ColumnVarNameInTable="columnДень_рождения" msprop:Generator_UserColumnName="День_рождения" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Место_рождения" msprop:Generator_ColumnPropNameInRow="Место_рождения" msprop:Generator_ColumnPropNameInTable="Место_рожденияColumn" msprop:Generator_ColumnVarNameInTable="columnМесто_рождения" msprop:Generator_UserColumnName="Место_рождения" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Национальность" msprop:Generator_ColumnPropNameInRow="Национальность" msprop:Generator_ColumnPropNameInTable="НациональностьColumn" msprop:Generator_ColumnVarNameInTable="columnНациональность" msprop:Generator_UserColumnName="Национальность" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ИНН" msprop:Generator_ColumnPropNameInRow="ИНН" msprop:Generator_ColumnPropNameInTable="ИННColumn" msprop:Generator_ColumnVarNameInTable="columnИНН" msprop:Generator_UserColumnName="ИНН" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Страховой_полис" msprop:Generator_ColumnPropNameInRow="Страховой_полис" msprop:Generator_ColumnPropNameInTable="Страховой_полисColumn" msprop:Generator_ColumnVarNameInTable="columnСтраховой_полис" msprop:Generator_UserColumnName="Страховой_полис" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес" msprop:Generator_ColumnPropNameInRow="Адрес" msprop:Generator_ColumnPropNameInTable="АдресColumn" msprop:Generator_ColumnVarNameInTable="columnАдрес" msprop:Generator_UserColumnName="Адрес" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_дома" msprop:Generator_ColumnPropNameInRow="Номер_дома" msprop:Generator_ColumnPropNameInTable="Номер_домаColumn" msprop:Generator_ColumnVarNameInTable="columnНомер_дома" msprop:Generator_UserColumnName="Номер_дома" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт_Серия" msprop:Generator_ColumnPropNameInRow="Паспорт_Серия" msprop:Generator_ColumnPropNameInTable="Паспорт_СерияColumn" msprop:Generator_ColumnVarNameInTable="columnПаспорт_Серия" msprop:Generator_UserColumnName="Паспорт_Серия" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт_Номер" msprop:Generator_ColumnPropNameInRow="Паспорт_Номер" msprop:Generator_ColumnPropNameInTable="Паспорт_НомерColumn" msprop:Generator_ColumnVarNameInTable="columnПаспорт_Номер" msprop:Generator_UserColumnName="Паспорт_Номер" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт_Кем_выдан" msprop:Generator_ColumnPropNameInRow="Паспорт_Кем_выдан" msprop:Generator_ColumnPropNameInTable="Паспорт_Кем_выданColumn" msprop:Generator_ColumnVarNameInTable="columnПаспорт_Кем_выдан" msprop:Generator_UserColumnName="Паспорт_Кем_выдан" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт_Когда_выдан" msprop:Generator_ColumnPropNameInRow="Паспорт_Когда_выдан" msprop:Generator_ColumnPropNameInTable="Паспорт_Когда_выданColumn" msprop:Generator_ColumnVarNameInTable="columnПаспорт_Когда_выдан" msprop:Generator_UserColumnName="Паспорт_Когда_выдан" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Школа" msprop:Generator_ColumnPropNameInRow="Школа" msprop:Generator_ColumnPropNameInTable="ШколаColumn" msprop:Generator_ColumnVarNameInTable="columnШкола" msprop:Generator_UserColumnName="Школа" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Льгота" msprop:Generator_ColumnPropNameInRow="Льгота" msprop:Generator_ColumnPropNameInTable="ЛьготаColumn" msprop:Generator_ColumnVarNameInTable="columnЛьгота" msprop:Generator_UserColumnName="Льгота" type="xs:int" minOccurs="0" />
+              <xs:element name="ФИО_Матери" msprop:Generator_ColumnPropNameInRow="ФИО_Матери" msprop:Generator_ColumnPropNameInTable="ФИО_МатериColumn" msprop:Generator_ColumnVarNameInTable="columnФИО_Матери" msprop:Generator_UserColumnName="ФИО_Матери" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ФИО_Отца" msprop:Generator_ColumnPropNameInRow="ФИО_Отца" msprop:Generator_ColumnPropNameInTable="ФИО_ОтцаColumn" msprop:Generator_ColumnVarNameInTable="columnФИО_Отца" msprop:Generator_UserColumnName="ФИО_Отца" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Средний_балл_аттестата" msprop:Generator_ColumnPropNameInRow="Средний_балл_аттестата" msprop:Generator_ColumnPropNameInTable="Средний_балл_аттестатаColumn" msprop:Generator_ColumnVarNameInTable="columnСредний_балл_аттестата" msprop:Generator_UserColumnName="Средний_балл_аттестата" type="xs:int" minOccurs="0" />
+              <xs:element name="Дата_подачи_заявления" msprop:Generator_ColumnPropNameInRow="Дата_подачи_заявления" msprop:Generator_ColumnPropNameInTable="Дата_подачи_заявленияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_подачи_заявления" msprop:Generator_UserColumnName="Дата_подачи_заявления" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Номер_заявления" msprop:Generator_ColumnPropNameInRow="Номер_заявления" msprop:Generator_ColumnPropNameInTable="Номер_заявленияColumn" msprop:Generator_ColumnVarNameInTable="columnНомер_заявления" msprop:Generator_UserColumnName="Номер_заявления" type="xs:int" minOccurs="0" />
+              <xs:element name="Экзамен1" msprop:Generator_ColumnPropNameInRow="Экзамен1" msprop:Generator_ColumnPropNameInTable="Экзамен1Column" msprop:Generator_ColumnVarNameInTable="columnЭкзамен1" msprop:Generator_UserColumnName="Экзамен1" type="xs:int" minOccurs="0" />
+              <xs:element name="Экзамен2" msprop:Generator_ColumnPropNameInRow="Экзамен2" msprop:Generator_ColumnPropNameInTable="Экзамен2Column" msprop:Generator_ColumnVarNameInTable="columnЭкзамен2" msprop:Generator_UserColumnName="Экзамен2" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Abiturient_RU" />
+      <xs:field xpath="mstns:_x0023_п_x005C_п" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
